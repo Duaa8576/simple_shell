@@ -231,4 +231,9 @@ int replace_alias(info_t *);
 int replace_vars(info_t *);
 int replace_string(char **, char *);
 
+/*ppath.c */
+void init_paths(void);
+char *find_command(char *command);
+void execute_command(char *command, char **args);
+
 #endif
